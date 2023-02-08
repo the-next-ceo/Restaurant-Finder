@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "jquery": "^3.6.3",
     "react": "^18.2.0",
+    "react-datalist-input": "^3.2.1",
     "react-dom": "^18.2.0",
     "react-native-web": "^0.18.12",
     "react-scripts": "5.0.1",

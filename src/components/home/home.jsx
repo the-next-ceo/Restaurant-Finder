@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import './home.css'
+import Search from "./search";
 
 
 const text = ['Game night?', 'Hungry?', 'Cooking gone wrong?']
@@ -24,7 +25,11 @@ function Home() {
       <section className="order">
         Order from the best restaurants from your location
       </section>
+      <div className="field">
+        <Search/>
+      </div>
     </div>
+
   )
 
 }
