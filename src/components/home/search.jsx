@@ -1,35 +1,30 @@
-/* eslint-disable no-lone-blocks */
-import './home.css'
-import DataListInput from 'react-datalist-input';
-import 'react-datalist-input/dist/styles.css';
+import "./home.css";
+import "react-datalist-input/dist/styles.css";
+import { Route, Routes } from "react-router";
+import { Local } from "../locations/loc";
+import { Link } from "react-router-dom";
+import { TextField, IconButton } from "@mui/material";
+import { SearchOutlined } from '@material-ui/icons';
 
 function Search() {
-    const locs = [
-        {id:'1', value: 'Delhi'},
-        {id:'2', value: 'Mumbai'},
-        {id:'3', value: 'Pune'},
-        {id:'4', value: 'Patna'},
-        {id:'5', value: 'Kolkata'},
-    ];
+  const locs = [
+    { id: "1", value: "Delhi" },
+    { id: "2", value: "Mumbai" },
+    { id: "3", value: "Pune" },
+    { id: "4", value: "Patna" },
+    { id: "5", value: "Kolkata" },
+  ];
 
-    return (
-        <div>
-            {/* <label >
-                <input list="locations" id="textfield" type="text" placeholder="Enter your location" /></label>
-            <datalist id="locations">
-                <option value="Delhi" />
-                <option value="Mumbai" />
-                <option value="Pune" />
-                <option value="Patna" />
-                <option value="Kolkata" />
-            </datalist> */}
-            <DataListInput
-                items={locs}
-                />
-        </div>
-
-
-    )
+  
+  
 }
+
+// function route() {
+//   return(
+//     <Routes>
+//         <Route path="/local" element={<Local />} />
+//       </Routes>
+//   )
+// }
 
 export default Search;

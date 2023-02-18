@@ -18,7 +18,7 @@ function Home() {
     const intervalID = setInterval(shuffle, 2000);
     return () => clearInterval(intervalID);
   }, [shuffle])
-
+  
   return (
     <div className="wrap">
       <h1 className="text">{newName}</h1>

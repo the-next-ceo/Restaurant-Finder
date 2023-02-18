@@ -18,7 +18,7 @@ function Navbar() {
 
                         <ul className="navlinks">
                             <li><a href="https://github.com/the-next-ceo">About</a></li>
-                            <li><a href=""> Services</a></li>
+                            
                             
                         </ul>
 
