@@ -1,5 +1,4 @@
 import "./home.css";
-import "react-datalist-input/dist/styles.css";
 import { Route, Routes } from "react-router";
 import { Local } from "../locations/loc";
 import { Link } from "react-router-dom";
@@ -15,6 +14,22 @@ function Search() {
     { id: "5", value: "Kolkata" },
   ];
 
+  return(
+    <div>
+      <TextField >
+        id = "textfield"
+        variant = "outlined"
+        defaultValue = "Enter your location"
+        InputProps={{ 
+          endAdornment: (
+            <IconButton>
+              <SearchOutlined />  
+            </IconButton>
+          ),
+        }}
+      </TextField>
+    </div>
+  )
   
   
 }
