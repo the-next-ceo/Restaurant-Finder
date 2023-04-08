@@ -16,30 +16,20 @@ function Search() {
 
   return(
     <div>
-      <TextField >
-        id = "textfield"
-        variant = "outlined"
-        defaultValue = "Enter your location"
-        InputProps={{ 
-          endAdornment: (
-            <IconButton>
-              <SearchOutlined />  
-            </IconButton>
-          ),
-        }}
-      </TextField>
+      <TextField
+                className="textfield"
+                variant="outlined"
+                placeholder="Enter your locationF"
+                InputProps={{
+                  endAdornment: (
+                    <IconButton>
+                      <SearchOutlined />
+                    </IconButton>
+                  ),
+                }}
+              />
     </div>
   )
-  
-  
 }
-
-// function route() {
-//   return(
-//     <Routes>
-//         <Route path="/local" element={<Local />} />
-//       </Routes>
-//   )
-// }
 
 export default Search;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
 
 body{
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .text {
@@ -32,18 +32,19 @@ body{
 }
 
 .field{
-    padding-top: 80px;
-    display: grid;
+    padding-top: 90px;
+    display:flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .textfield{
-    width: 5;
-    height: 42px;
+    background: white;
+    width: 29.0rem;
+    /* height: 80%; */
     font-size: 1.5rem;
     border-radius: 5px;
-    overflow: hidden;
+    overflow:visible;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
